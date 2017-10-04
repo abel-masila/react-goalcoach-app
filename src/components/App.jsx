@@ -3,6 +3,7 @@ import { firebaseApp } from '../firebase';
 import { connect } from 'react-redux';
 import AddGoal  from './AddGoal';
 import GoalList  from './GoalList';
+import CompletedGoalList  from './CompletedGoalList';
 class App extends Component {
   //Logout helper method
   Logout(){
@@ -16,6 +17,9 @@ class App extends Component {
           <hr />
           <h4>Goals</h4>
           <GoalList />
+          <hr />
+          <h4>Complete Goals</h4>
+          <CompletedGoalList />
           <hr />
         <button
           className="btn btn-danger"
